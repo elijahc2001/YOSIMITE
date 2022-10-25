@@ -80,15 +80,14 @@ p {
 }
 
 h3 {
-    font-family: 'Inter';
-font-style: normal;
+font-family: Arial, Helvetica, sans-serif;
 font-weight: 500;
 font-size: 14px;
 line-height: 20px;
 /* or 143% */
 
 letter-spacing: 0.2em;
-text-align: ;
+text-align: left;
+
 }
-]
 
