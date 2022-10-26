@@ -83,13 +83,13 @@ padding: 0 0 0 0;
 
 .noseline{
     position: absolute;
-    left: 625px;
-    top: 115px;
+    left: 620px;
+    top: 60px;
 }
 
 .nosegrade{
     position: absolute;
-    left: 400px;
+    left: px;
     top: 800px;
 
     background-color: #04172E;
@@ -97,11 +97,4 @@ padding: 0 0 0 0;
     padding: 10px;
 }
 
-
-.graph_background{
-    position: absolute;
-    background-color: #04172E;
-    height: 100%;
-    justify-content: center;
-}
 
