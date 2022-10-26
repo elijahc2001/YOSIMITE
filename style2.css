@@ -81,5 +81,27 @@ padding: 0 0 0 0;
     margin: 0 0 200px 0;
 }
 
+.noseline{
+    position: absolute;
+    left: 625px;
+    top: 115px;
+}
 
+.nosegrade{
+    position: absolute;
+    left: 400px;
+    top: 800px;
+
+    background-color: #04172E;
+    background-blend-mode: darken;
+    padding: 10px;
+}
+
+
+.graph_background{
+    position: absolute;
+    background-color: #04172E;
+    height: 100%;
+    justify-content: center;
+}
 
