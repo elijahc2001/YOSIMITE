@@ -13,6 +13,9 @@
 
   <body>
 
+    <div class="home">
+        <a href="http://127.0.0.1:5500/index.html">YOSIMITE CALIFORNIA</a>
+    </div>
 
 <div class="container">
     
@@ -47,13 +50,13 @@
         <img src="images/ELCAP_HALFTONE 1.jpg" alt="">
     </div>
 
-    <div class="noseline">
+    <div class="noseline" id="nl">
     <img src="images/NOSELINE.svg" alt="Nose Line">
     </div>
 
-    <!-- <div class="nosegrade">
+    <div class="nosegrade" id="ng">
         <img src="images/NOSE_GRADE.svg" alt="Grade">
-    </div> -->
+    </div>
 
     <!-- <div class="graph_background">
     <svg 
@@ -65,19 +68,20 @@
 
 
 
-    <script>
-         #noseline, {
-        cursor: pointer;
-        
-      }
 
-      <script>
-      document.getElementById('noseline').addEventListener('click', function getinfo() {
-        alert('clicked');
+<script>
+    let noseline = document.getElementById('nl');
+
+       noseline.addEventListener('click', function getinfo() {
+        alert('clicked'); 
+        gsap.to('#ng',1,{x:200,visability:"hidden"});
       });
-    </script>
 
-    </script>
+
+
+
+
+</script>
 
   </body>
 

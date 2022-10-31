@@ -38,11 +38,12 @@ header{
   background-color: #04172E;
   color: white;
   padding: 40px 40px 40px 40px;
-  width : 400px;
+  width :500px;
   height: auto;
   margin-top: 60px;
   margin-left: 200px;
   text-align: center;
+  align-items: center;
 }
 
 .background-image{
@@ -73,8 +74,8 @@ h1 {
     font-size: 92px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-    margin: 40px 0 20px 0;
-    padding: 0 0 0 0;
+    margin: 40px 0 100px 0;
+    padding: 0 100px 0 0;
     letter-spacing: 0.07em;
     line-height: 82px;
 }

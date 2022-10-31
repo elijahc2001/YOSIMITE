@@ -85,6 +85,7 @@ padding: 0 0 0 0;
     position: absolute;
     left: 620px;
     top: 60px;
+    cursor: pointer;
 }
 
 .nosegrade{
@@ -95,6 +96,22 @@ padding: 0 0 0 0;
     background-color: #04172E;
     background-blend-mode: darken;
     padding: 10px;
+
 }
 
 
+header{
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 4px 0 4px 0;
+    max-width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.9em;
+
+    color: #04172E;
+}
