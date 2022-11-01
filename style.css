@@ -34,14 +34,13 @@ header{
 .hero-textbox{
   position: absolute;
   top: 100px;
-  left: -150px;
+  left: 100px;
   background-color: #04172E;
   color: white;
   padding: 40px 40px 40px 40px;
-  width :500px;
+  width :450px;
   height: auto;
-  margin-top: 60px;
-  margin-left: 200px;
+
   text-align: center;
   align-items: center;
 }
@@ -99,7 +98,7 @@ p {
     border-style: solid;
     border-radius: 53px;
     padding: 2px 2px 2px 2px;
-    margin: 0 0 60px 0;
+    margin: 0 auto 60px auto;
 }
 
 h3 {

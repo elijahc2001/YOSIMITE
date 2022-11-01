@@ -49,6 +49,15 @@
             El Capitan is home to numerous classic routes but "The Nose" is the mega classic of them all. Towering nearly 3000' this route offers 31 pitches of superb climbing right up the middle of the wall. Often referred to as the "best rock climb in the world" it is obvious why this route is one of the most sought after big walls in the valley and the world. Most of the pitches on this route are outstanding but with classics such as the "Stovelegs", "King Swing" and "Great Roof" you'll wish it would never end. Although this is a great climb the route is still very demanding, sustained and exposed and not to be taken lightly. 
         </p>
 
+        <p>
+            Graph to the left shows pitch grades of each of the selected climbs.
+            Climbs are broken down into ‘pitches’, a pitch is a length of rope and a climbing difficulty grade is given to each pitch. 
+    
+            <br>
+            Each bar is a pitch, the higher it is the harder that specific pitch is. The graph gives an indication of the climbs overall difficulty.
+            Climbing grades range between 5.6 and 5.13,
+        </p>
+
     </div>
 
     <div class = "image">
@@ -79,6 +88,15 @@
     <p>
        Route is climbing at its finest. The route follows complex crack systems up the southwest face of El Capitan. Essentially it is the Salathe wall with a few variations used (pioneered by Alex Huber) to avoid the numerous 5.13 crux pitches first freed by Paul Piana and Todd Skinner in the mid 80's.
     </p>
+
+    <p>
+        Graph to the left shows pitch grades of each of the selected climbs.
+        Climbs are broken down into ‘pitches’, a pitch is a length of rope and a climbing difficulty grade is given to each pitch. 
+
+
+        Each bar is a pitch, the higher it is the harder that specific pitch is. The graph gives an indication of the climbs overall difficulty.
+        Climbing grades range between 5.6 and 5.13,
+    </p>
     
 </div>
 
@@ -105,14 +123,29 @@
     <p>
         An interesting and little known fact is that the order of the first three routes climbed on El Cap and the order that those three became the first three free routes on the captain roughly line up, the first being The Nose (1958 and 1993), second being the Salathe (1961 and 1988), and third being the North America Wall and its free variation, El Nino (1964 and 1998).
     </p>
+
+    <p>
+        Graph to the left shows pitch grades of each of the selected climbs.
+        Climbs are broken down into ‘pitches’, a pitch is a length of rope and a climbing difficulty grade is given to each pitch. 
+
+
+        Each bar is a pitch, the higher it is the harder that specific pitch is. The graph gives an indication of the climbs overall difficulty.
+        Climbing grades range between 5.6 and 5.13,
+    </p>
     
 </div>
 
-<div class="grade_exp">
+<div class="start-block" id="sb">
+    <h3>
+      Click a line to get started
+    </h3>
+ </div>
+
+<!-- <div class="grade_exp">
     <p>
         explination goes here
     </p>
-</div>
+</div> -->
 
     <div class="noseline" id="nl">
     <img src="images/NOSELINE.svg" alt="Nose Line">
@@ -182,6 +215,9 @@ document.getElementById('nl').addEventListener('click', function shownose() {
         gsap.to('#fr_b', 0.5, {opacity: 0 });
         gsap.to('#fr_g', 0.5, {opacity: 0 });
         gsap.to('#ftx', 0.5, {opacity: 0 });
+
+        gsap.to('#sb', 0.5, {opacity: 0 });
+
       });
 
       
@@ -193,6 +229,8 @@ document.getElementById('fr').addEventListener('click', function showfree() {
         gsap.to('#ng', 0.5, {opacity: 0 });
         gsap.to('#nl', 0.5, {opacity: 0 });
         gsap.to('#tx', 0.5, {opacity: 0 });
+
+        gsap.to('#sb', 0.5, {opacity: 0 });
       });
 
 
