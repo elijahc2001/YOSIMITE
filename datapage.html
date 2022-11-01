@@ -6,16 +6,22 @@
 
     <meta charset="utf-8" />
     <title>DATA</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style2.css">
 
   </head>
 
   <body>
 
+    <header>
     <div class="home">
         <a href="http://127.0.0.1:5500/index.html">YOSIMITE CALIFORNIA</a>
     </div>
+    </header>
+
+
 
 <div class="container">
     
@@ -43,12 +49,64 @@
             El Capitan is home to numerous classic routes but "The Nose" is the mega classic of them all. Towering nearly 3000' this route offers 31 pitches of superb climbing right up the middle of the wall. Often referred to as the "best rock climb in the world" it is obvious why this route is one of the most sought after big walls in the valley and the world. Most of the pitches on this route are outstanding but with classics such as the "Stovelegs", "King Swing" and "Great Roof" you'll wish it would never end. Although this is a great climb the route is still very demanding, sustained and exposed and not to be taken lightly. 
         </p>
 
-
     </div>
 
     <div class = "image">
         <img src="images/ELCAP_HALFTONE 1.jpg" alt="">
     </div>
+
+</div>
+
+<div class="free_text">
+  
+    <h1>
+        FREE-<br>RIDER
+    </h1>
+
+    <div class="grade">
+    <h3>
+        FREE ROUTE      5.13a <br>
+        1000M VERTICAL 
+        <br>
+         30 PITCHES
+    </h3>
+     </div>
+
+    <h3>
+        FIRST ASCENT: THOMAS AND ALEX HUBER 1998
+    </h3>
+
+    <p>
+       route is climbing at its finest. The route follows complex crack systems up the southwest face of El Capitan. Essentially it is the Salathe wall with a few variations used (pioneered by Alex Huber) to avoid the numerous 5.13 crux pitches first freed by Paul Piana and Todd Skinner in the mid 80's.
+    </p>
+    
+</div>
+
+
+<div class="nino_text">
+  
+    <h1>
+       EL NINO
+    </h1>
+
+    <div class="grade">
+    <h3>
+        TRAF ROUTE      5.13B/C <br>
+        758M VERTICAL 
+        <br>
+         25 PITCHES
+    </h3>
+     </div>
+
+    <h3>
+        FIRST ASCENT: THOMAS AND ALEX HUBER 1998
+    </h3>
+
+    <p>
+        An interesting and little known fact is that the order of the first three routes climbed on El Cap and the order that those three became the first three free routes on the captain roughly line up, the first being The Nose (1958 and 1993), second being the Salathe (1961 and 1988), and third being the North America Wall and its free variation, El Nino (1964 and 1998).
+    </p>
+    
+</div>
 
     <div class="noseline" id="nl">
     <img src="images/NOSELINE.svg" alt="Nose Line">
@@ -56,7 +114,27 @@
 
     <div class="nosegrade" id="ng">
         <img src="images/NOSE_GRADE.svg" alt="Grade">
+    </div> 
+
+    <div class="fr_line" id="fr">
+        <img src="/images/FREERIDER(BLUE).svg" alt="">
     </div>
+
+    <div class="fr_button" id="fr_b">
+        <img src="/images/FREERIDER_BUTTON (Stroke).svg" alt="">
+    </div>
+
+
+    <div class="en_line" id="en">
+        <img src="/images/ELNINO(BLUE).svg" alt="">
+    </div>
+
+    <div class="en_button" id="en_b">
+        <img src="/images/EL_NINO_BUTTON.svg" alt="">
+    </div>
+
+
+
 
     <!-- <div class="graph_background">
     <svg 
@@ -64,18 +142,51 @@
     </svg>
 </div> -->
 
-</div>
 
+
+
+</body>
 
 
 
 <script>
-    let noseline = document.getElementById('nl');
 
-       noseline.addEventListener('click', function getinfo() {
-        alert('clicked'); 
-        gsap.to('#ng',1,{x:200,visability:"hidden"});
-      });
+gsap.from('.nosegrade', { duration: 1, opacity: 0, delay: 1,});
+
+gsap.from('.free_text', { duration: 2, y: '-1000px' });
+
+gsap.from('.nino-text', { duration: 1, x: '-1000px' });
+
+gsap.from('.fr_button', { duration: 3, x: '1000px' });
+
+
+
+
+    // let noseline = document.getElementById('nl');
+
+    //    noseline.addEventListener('click', function gsap.to('#ng',0,{x:200,visability:"hidden"});
+    //     gsap.to('#ng',0,{z:1,visability:"hidden"});
+    //     function stack() {
+    //         document.getElementById("ng").style.zIndex = "1";
+    //     }
+
+
+
+    // let noseline = document.getElementById('nl');
+
+    //      noseline.addEventListener('click', function getinfo() {
+    //      alert('clicked'); 
+    //     gsap.to('#ng',1,{x:200,visability:"hidden"});
+
+
+
+        
+     
+
+
+    //   function stack() {
+    //         document.getElementById("ng").style.zIndex = "1";
+    //     }
 
 
 

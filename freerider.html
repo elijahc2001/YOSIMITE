@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8" />
+    <title>FREERIDER</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+
+  </head>
+
+  <body>
+
+    <header>
+    <div class="home">
+        <a href="http://127.0.0.1:5500/index.html">YOSIMITE CALIFORNIA</a>
+    </div>
+    </header>
+
+
+
+<div class="container">
+    
+    
+    <div class="hero-textbox">
+  
+        <h1>
+            FREE-<br>RIDER
+        </h1>
+        <div class="grade">
+        <h3>
+            FREE ROUTE      5.13a <br>
+            1000M VERTICAL 
+            <br>
+             30 PITCHES
+        </h3>
+         </div>
+
+        <h3>
+            FIRST ASCENT: THOMAS AND ALEX HUBER 1998<br>
+    
+        </h3>
+
+        <p>
+            Freerider is the Astroman of the new millennium. This route is climbing at its finest. The route follows complex crack systems up the southwest face of El Capitan. Essentially it is the Salathe wall with a few variations used (pioneered by Alex Huber) to avoid the numerous 5.13 crux pitches first freed by Paul Piana and Todd Skinner in the mid 80's.
+        </p>
+
+
+    </div>
+
+    <div class = "image">
+        <img src="images/ELCAP_HALFTONE 1.jpg" alt="">
+    </div>
+
+    <div class="noseline" id="nl">
+    <img src="images/NOSELINE.svg" alt="Nose Line">
+    </div>
+
+    <div class="nosegrade" id="ng">
+        <img src="images/NOSE_GRADE.svg" alt="Grade">
+    </div> 
+
+    <div class="freerider" id="fr">
+        <a href="http://127.0.0.1:5500/freerider.html">
+        <img src="/images/FREERIDER (Stroke).svg" alt="freerider">
+        </a>
+    </div>
+
+    <div class="elnino" id="en">
+        <img src="/images/EL NINO (Stroke).svg" alt="">
+    </div>
+
+
+    <!-- <div class="graph_background">
+    <svg 
+    width="800" height="395"> 
+    </svg>
+</div> -->
+
+</div>
+
+
+
+
+<script>
+    let noseline = document.getElementById('nl');
+
+       noseline.addEventListener('click', function gsap.to('#ng',0,{x:200,visability:"hidden"});
+        gsap.to('#ng',0,{z:-3,visability:"hidden"});
+        function stack() {
+            document.getElementById("ng").style.zIndex = "1";
+        }
+
+        
+     
+
+
+      function stack() {
+            document.getElementById("ng").style.zIndex = "1";
+        }
+
+
+
+
+
+</script>
+
+  </body>
+
+</html>

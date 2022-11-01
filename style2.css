@@ -10,9 +10,8 @@ html{
 }
 
 header{
-    flex: 50%;
     background-color: white;
-    margin: 0 0 20px 0;
+    margin: 0px 0 20px 0;
     padding: 4px 0 4px 0;
     max-width: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,6 +23,7 @@ header{
     letter-spacing: 0.9em;
     color: #04172E;
 }
+
 
 .hero-textbox{
     background-color: white;
@@ -63,7 +63,7 @@ p {
     font-weight: lighter;
     padding: auto;
     margin: 20px 0 0 0;
-    max-width: 400px;
+    /* max-width: 400px; */
     align-content: center;
 }
 
@@ -84,34 +84,80 @@ padding: 0 0 0 0;
 .noseline{
     position: absolute;
     left: 620px;
-    top: 60px;
+    top: 120px;
     cursor: pointer;
 }
 
 .nosegrade{
     position: absolute;
     left: px;
-    top: 800px;
-
+    top: 900px;
+    left: 400px;
+    z-index: 3;
     background-color: #04172E;
     background-blend-mode: darken;
     padding: 10px;
+}
 
+.fr_line{
+    position: absolute;
+    left: 590px;
+    top: 198px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fr_button{
+    position: absolute;
+    left: 590px;
+    top: 198px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.en_line{
+    position: absolute;
+    left: 1028px;
+    top: 255px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.en_button{  
+    position: absolute;
+    left: 1026px;
+    top: 250px;
+    cursor: pointer;
+    z-index: -1;
 }
 
 
-header{
+.free_text{
+    position: absolute;
+    left: 9px;
+    top: 58.5px;
     background-color: white;
-    margin: 0 0 0 0;
-    padding: 4px 0 4px 0;
-    max-width: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.9em;
-
     color: #04172E;
+    padding: 40px 40px 40px 40px;
+    max-width: 400px;
+    height: auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
 }
+
+.nino_text{
+    position: absolute;
+    left: 9px;
+    top: 58.5px;
+    background-color: white;
+    color: #04172E;
+    padding: 40px 40px 40px 40px;
+    width : 400px;
+    height: auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+
