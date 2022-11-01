@@ -26,7 +26,7 @@
 <div class="container">
     
     
-    <div class="hero-textbox">
+    <div class="hero-textbox" id="tx">
   
         <h1>
             THE NOSE
@@ -57,7 +57,7 @@
 
 </div>
 
-<div class="free_text">
+<div class="free_text" id="ftx">
   
     <h1>
         FREE-<br>RIDER
@@ -77,13 +77,13 @@
     </h3>
 
     <p>
-       route is climbing at its finest. The route follows complex crack systems up the southwest face of El Capitan. Essentially it is the Salathe wall with a few variations used (pioneered by Alex Huber) to avoid the numerous 5.13 crux pitches first freed by Paul Piana and Todd Skinner in the mid 80's.
+       Route is climbing at its finest. The route follows complex crack systems up the southwest face of El Capitan. Essentially it is the Salathe wall with a few variations used (pioneered by Alex Huber) to avoid the numerous 5.13 crux pitches first freed by Paul Piana and Todd Skinner in the mid 80's.
     </p>
     
 </div>
 
 
-<div class="nino_text">
+<div class="nino_text" id="ntx">
   
     <h1>
        EL NINO
@@ -108,21 +108,34 @@
     
 </div>
 
+<div class="grade_exp">
+    <p>
+        explination goes here
+    </p>
+</div>
+
     <div class="noseline" id="nl">
     <img src="images/NOSELINE.svg" alt="Nose Line">
     </div>
-
+    <div class="nose_button" id="nb">
+        <img src="/images/NOSE_BUTTON.svg" alt="">
+    </div>
     <div class="nosegrade" id="ng">
         <img src="images/NOSE_GRADE.svg" alt="Grade">
     </div> 
 
+    
+
     <div class="fr_line" id="fr">
         <img src="/images/FREERIDER(BLUE).svg" alt="">
     </div>
-
     <div class="fr_button" id="fr_b">
         <img src="/images/FREERIDER_BUTTON (Stroke).svg" alt="">
     </div>
+    <div class="fr_grade" id="fr_g">
+        <img src="/images/FREERIDER_GRADES.svg" alt="">
+    </div>
+
 
 
     <div class="en_line" id="en">
@@ -131,6 +144,10 @@
 
     <div class="en_button" id="en_b">
         <img src="/images/EL_NINO_BUTTON.svg" alt="">
+    </div>
+
+    <div class="en_grade" id="en_g">
+        <img src="/images/ELNINO_GRADE.svg" alt="">
     </div>
 
 
@@ -151,13 +168,50 @@
 
 <script>
 
-gsap.from('.nosegrade', { duration: 1, opacity: 0, delay: 1,});
+let nose_button  = document.getElementById('nb');
 
-gsap.from('.free_text', { duration: 2, y: '-1000px' });
+let fr_line = document.getElementById('fr');
 
-gsap.from('.nino-text', { duration: 1, x: '-1000px' });
+let en_line = document.getElementById('en');
 
-gsap.from('.fr_button', { duration: 3, x: '1000px' });
+document.getElementById('nl').addEventListener('click', function shownose() {
+        gsap.to('#ng', 0.5, {opacity: 1 });
+        gsap.to('#nl', 0.5, {opacity: 1 });
+        gsap.to('#tx', 0.5, {opacity: 1 });
+
+        gsap.to('#fr_b', 0.5, {opacity: 0 });
+        gsap.to('#fr_g', 0.5, {opacity: 0 });
+        gsap.to('#ftx', 0.5, {opacity: 0 });
+      });
+
+      
+document.getElementById('fr').addEventListener('click', function showfree() {
+        gsap.to('#fr_b', 0.5, {opacity: 1 });
+        gsap.to('#fr_g', 0.5, {opacity: 1 });
+        gsap.to('#ftx', 0.5, {opacity: 1 });
+
+        gsap.to('#ng', 0.5, {opacity: 0 });
+        gsap.to('#nl', 0.5, {opacity: 0 });
+        gsap.to('#tx', 0.5, {opacity: 0 });
+      });
+
+
+document.getElementById('en').addEventListener('click', function shownino() {
+        gsap.to('#en_b', 1, {opacity: 1 });
+        gsap.to('#en_g', 1, {opacity: 1 });
+        gsap.to('#ntx', 1, {opacity: 1 });
+      });
+
+
+// gsap.from('.nosegrade', { duration: 1, opacity: 0, delay: 1,});
+
+// gsap.from('.free_text', { duration: 2, y: '-1000px' });
+
+// gsap.from('.nino-text', { duration: 1, x: '-1000px' });
+
+// gsap.from('.fr_button', { duration: 3, x: '1000px' });
+
+
 
 
 
